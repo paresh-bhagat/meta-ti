@@ -21,12 +21,12 @@ TI_PKA_FW_VERSION = "2.1.0"
 TI_IPC_EXAMPLES_FW_VERSION = "3.52.00.01"
 PCM6240_FW_VERSION = "1.0.0.0"
 
-TI_LINUX_FW_SRCREV ?= "9dffeff8264765a462d6f96b50ba12e4ad7fba70"
-SRCREV = "${TI_LINUX_FW_SRCREV}"
+TI_LINUX_FW_SRCREV ?= "9e9d50ff563f83db86d36b72cd7fb4f487d6b414"
+SRCREV = "${AUTOREV}"
 
-BRANCH ?= "ti-linux-firmware"
+BRANCH ?= "horizon-dev"
 
-TI_LINUX_FW_GIT_URI ?= "git://git.ti.com/git/processor-firmware/ti-linux-firmware.git"
+TI_LINUX_FW_GIT_URI ?= "git://github.com/paresh-bhagat/ti-linux-firmware.git"
 TI_LINUX_FW_GIT_PROTOCOL ?= "https"
 TI_LINUX_FW_GIT_BRANCH ?= "branch=${BRANCH}"
 
