@@ -1,0 +1,31 @@
+From 10af0e134b838d445a25feb5b44eb7d4f90bf0a2 Mon Sep 17 00:00:00 2001
+From: Paresh Bhagat <p-bhagat@ti.com>
+Date: Mon, 31 Aug 2026 12:46:36 +0530
+Subject: [tiU26.01 PATCH] TI: board: am62dx: Add DT overlays for EdgeAI and
+ DSP
+
+Add name_overlays to apply k3-am62a7-sk-edgeai.dtbo and
+k3-am62d2-evm-dsp-carveout.dtbo to reserve dedicated DDR memory for
+EdgeAI and DSP pre/post-processing buffers.
+
+Upstream-Status: Pending
+
+Signed-off-by: Paresh Bhagat <p-bhagat@ti.com>
+---
+Boot logs-http://serenity.dal.design.ti.com:7777/olugalojar.yaml
+
+ board/ti/am62dx/am62dx.env | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/board/ti/am62dx/am62dx.env b/board/ti/am62dx/am62dx.env
+index 2ce91e1e4cb..3679f04e5bd 100644
+--- a/board/ti/am62dx/am62dx.env
++++ b/board/ti/am62dx/am62dx.env
+@@ -18,3 +18,4 @@ bootdir=/boot
+ rd_spec=-
+ 
+ rproc_fw_binaries= 0 /lib/firmware/am62d-mcu-r5f0_0-fw 1 /lib/firmware/am62d-c71_0-fw
++name_overlays=ti/k3-am62a7-sk-edgeai.dtbo ti/k3-am62d2-evm-dsp-carveout.dtbo
+-- 
+2.34.1
+
